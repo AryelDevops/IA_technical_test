@@ -5,7 +5,7 @@ FROM httpd:alpine3.14
 RUN addgroup -S orion && adduser -S arielson -G orion
 
 #Apache for default have this directory and all files as root, so when start container, \
-#my user will cann't create the file with PID of httpd;
+#my user will can't create the file with PID of httpd;
 RUN chown arielson:orion -R /usr/local/apache2
 
 #Switch for user that always will go execute my app;
