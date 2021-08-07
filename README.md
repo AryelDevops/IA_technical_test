@@ -24,3 +24,6 @@ Create the infrastructure to deploy a simple website (helloworld!) with monitori
 - Copy and paste app for image 
 - Workdir
 - Expose port 80 for external access
+5. Create a k8s deployment/service for deploy app in a k8s cluster
+- deployment.yaml
+- service.yaml 
