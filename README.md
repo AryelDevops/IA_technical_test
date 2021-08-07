@@ -14,7 +14,6 @@ Create the infrastructure to deploy a simple website (helloworld!) with monitori
 - Grafana
 
 # Step by step from code to deploy with monitoring
-
 1. Create a public repository in GitHub;
 2. Clone public repository in local machine;
 3. Create a simple app in html;
@@ -23,7 +22,13 @@ Create the infrastructure to deploy a simple website (helloworld!) with monitori
 - User and group without root privileged
 - Copy and paste app for image 
 - Workdir
-- Expose port 80 for external access
-5. Create a k8s deployment/service for deploy app in a k8s cluster
-- deployment.yaml
-- service.yaml 
+- Expose port 80 for external access 
+5. Create a k8s cluster in digital ocean using terraform
+- terraform init
+- terraform plan -out plan
+- terraform apply plan
+6. Get kubeconfig of digital ocean cluster 
+- doctl kubernetes cluster kubeconfig save hello-world
+7. Create a k8s deployment/service for deploy app in a k8s cluster
+- deployment.yaml and service.yaml
+- kubectl apply -f deployment.yaml 
