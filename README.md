@@ -8,7 +8,9 @@ Create the infrastructure to deploy a simple website (helloworld!) with monitori
 - DockerHub
 - Terraform
 - Digital Ocean Cloud Provider (for cluster k8s)
+- doctl
 - Kubernetes
+- kubectl
 - Helm
 - Prometheus
 - Grafana
@@ -17,18 +19,22 @@ Create the infrastructure to deploy a simple website (helloworld!) with monitori
 1. Create a public repository in GitHub;
 2. Clone public repository in local machine;
 3. Create a simple app in html;
-4. Create Dockerfile for app (clean and with security practices);
-- Image base clean
-- User and group without root privileged
-- Copy and paste app for image 
-- Workdir
-- Expose port 80 for external access 
+4. Create Dockerfile(clean) for app;
+    - Image base clean
+    - Copy and paste app for image 
+    - Workdir
+    - Expose port 80 for external access
+    - docker build -t repo-name/image-name:tag
+    - docker scan repo-name/image-name:tag
+    - docker login
+    - docker push repo-name/image-name:tag 
 5. Create a k8s cluster in digital ocean using terraform
-- terraform init
-- terraform plan -out plan
-- terraform apply plan
-6. Get kubeconfig of digital ocean cluster 
-- doctl kubernetes cluster kubeconfig save hello-world
+    - terraform init
+    - terraform plan -out plan
+    - terraform apply plan
+6. Get kubeconfig of digital ocean cluster
+    - doctl auth init 
+    - doctl kubernetes cluster kubeconfig save hello-world
 7. Create a k8s deployment/service for deploy app in a k8s cluster
-- deployment.yaml and service.yaml
-- kubectl apply -f deployment.yaml 
+    - deployment.yaml and service.yaml
+    - kubectl apply -f deployment.yaml 
