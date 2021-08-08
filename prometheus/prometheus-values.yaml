@@ -1,0 +1,20 @@
+alertmanager:
+  enabled: false
+
+pushgateway:
+  enabled: false 
+
+kubeStateMetrics:
+  enabled: false
+
+server:
+  global:
+    scrape_interval: 5s
+    scrape_timeout: 5s
+
+  persistentVolume:
+    enabled: false 
+  
+  service:
+    type: LoadBalancer
+    nodePort: 30001

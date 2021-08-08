@@ -1,0 +1,10 @@
+service:
+  ## Defino o tipo do Service 
+  type: LoadBalancer
+  ## Definindo a porta que vai ser usada no Service NodePort
+  nodePort: 30002
+
+## Definição do usuário administrador
+adminUser: admin
+## Definição da senha do administrador
+adminPassword: "123456"

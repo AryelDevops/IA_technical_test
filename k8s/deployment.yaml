@@ -9,14 +9,18 @@ spec:
       app: hello-world-ia
   template:
     metadata:
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/path: "/metrics"
+        prometheus.io/port: "9091"
       labels:
         app: hello-world-ia
     spec:
        containers:
        - name: hello-world
-         image: aryeldevops/hello-world-ia:v2
+         image: aryeldevops/hello-world-ia-prom:v1
          ports:
-         - containerPort: 80
+         - containerPort: 9091
 ---
 apiVersion: v1
 kind: Service
@@ -27,6 +31,6 @@ spec:
     app: hello-world-ia
   ports:
     - port: 80
-      targetPort: 80
+      targetPort: 9091
       nodePort: 30000
   type: LoadBalancer
