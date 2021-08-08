@@ -18,12 +18,12 @@ Create the infrastructure to deploy a simple website (helloworld!) with monitori
 # Step by step from code to deploy with monitoring
 1. Create a public repository in GitHub;
 2. Clone public repository in local machine;
-3. Create a simple app in html;
+3. Create a simple app in node;
 4. Create Dockerfile(clean) for app;
     - Image base clean
     - Copy and paste app for image 
-    - Workdir
-    - Expose port 80 for external access
+    - Workdir /app
+    - Expose port 9091 for external access
     - docker build -t repo-name/image-name:tag
     - docker scan repo-name/image-name:tag
     - docker login
