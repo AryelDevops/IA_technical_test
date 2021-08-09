@@ -21,7 +21,9 @@
 
 - cd k8s_terraform/k8s_do
 - docker run -it -v $PWD:/app -w /app --entrypoint "" hashicorp/terraform:light sh //terraform official docker image 
-- auth in aws s3 bucket with env Vars
+- auth in aws
+    - export AWS_ACCESS_KEY_ID= 
+    - export AWS_SECRET_ACCESS_KEY=
 - terraform init
 - terraform plan -out plan
 - terraform apply plan
