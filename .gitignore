@@ -37,6 +37,7 @@ ehthumbs.db
 Thumbs.db
 plan
 documentation
-#.github*
+.github*
 .terraform*
+terraform*
 secrets

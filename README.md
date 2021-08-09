@@ -1,6 +1,6 @@
 #Step by step to complete this test
 
-#Tecnology applyeds:
+#Tecnologys applyeds:
 - Linux Ubuntu 20.04 => https://ubuntu.com/download
 - Visual Studio Code => https://visualstudio.microsoft.com/pt-br/
 - Docker => https://docs.docker.com/engine/install/
