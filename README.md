@@ -1,4 +1,19 @@
-#Step by step to complete this test
+#Step by step to complete this challenge
+
+Description:
+Create the infrastructure to deploy a simple website (helloworld!) with
+monitoring.
+
+- Simple website/app using Docker (you can use an existing docker image);
+- Use Kubernetes to deploy the applications (you can use a local kubernetes);
+- Deploy that website/app and monitoring tools of your choice in kubernetes;
+- Present the monitoring/status of the website/app;
+- Write documentation clearly and objectively all the steps necessary to run the challenge;
+
+Bonus:
+- Provisioning the infrastructure you needed to accomplish this challenge, using your
+preferred tool. (terraform, cloud formation or ansible);
+- Use Grafana integrated with the monitoring tool of your choice;
 
 #Tecnologys applyeds:
 - Linux Ubuntu 20.04 => https://ubuntu.com/download
