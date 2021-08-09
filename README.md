@@ -104,4 +104,5 @@ preferred tool. (terraform, cloud formation or ansible);
         - K8S_CONFIG: kubeconfig cluster created 
         - DOCKER_USERNAME: dockerhub username
         - DOCKER_PASSWD: dockerhub password
+
 #ALL THE IMAGES IN images_results
