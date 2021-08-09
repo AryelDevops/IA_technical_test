@@ -19,6 +19,7 @@
 
 #CREATING INFRASTRUCTURE IN DIGITAL OCEAN WITH TERRAFORM;
 
+- cd k8s_terraform/k8s_do
 - docker run -it -v $PWD:/app -w /app --entrypoint "" hashicorp/terraform:light sh //terraform official docker image 
 - auth in aws s3 bucket with env Vars
 - terraform init
@@ -32,7 +33,7 @@
 
 #APPLYING MANIFESTS IN THE K8S CLUSTER;
 
-- kubectl apply -f deployment.yaml
+- kubectl apply -f k8s/deployment.yaml
 
 #INSTALLING HELM CHART PROMETHEUS;
 

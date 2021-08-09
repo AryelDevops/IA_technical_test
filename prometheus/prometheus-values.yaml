@@ -1,20 +1,26 @@
+#disable alertmanager
 alertmanager:
   enabled: false
 
+#disable pushgateway
 pushgateway:
   enabled: false 
 
+#disable kubestatemetrics
 kubeStateMetrics:
   enabled: false
-
+  
+#server config
 server:
   global:
     scrape_interval: 5s
     scrape_timeout: 5s
 
+#disable persistent volume
   persistentVolume:
     enabled: false 
-  
+
+#publish service
   service:
     type: LoadBalancer
     nodePort: 30001
