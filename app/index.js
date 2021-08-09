@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
  console.log('GET /');
 });
 app.get('/hello', (req, res) => {
- const { name = 'Instituto Atlântico' } = req.query;
+ const { name = 'Instituto Atlântico <3' } = req.query;
  res.json({ message: `HelloWorld, ${name}!` });
  console.log('GET /hello');
 });
