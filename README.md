@@ -29,12 +29,14 @@ Create the infrastructure to deploy a simple website (helloworld!) with monitori
     - docker login
     - docker push repo-name/image-name:tag 
 5. Create a k8s cluster in digital ocean using terraform
+    - create config files .tf
     - terraform init
     - terraform plan -out plan
     - terraform apply plan
 6. Get kubeconfig of digital ocean cluster
     - doctl auth init 
-    - doctl kubernetes cluster kubeconfig save hello-world
+    - doctl kubernetes cluster kubeconfig save "helloworld"
 7. Create a k8s deployment/service for deploy app in a k8s cluster
     - deployment.yaml and service.yaml
     - kubectl apply -f deployment.yaml 
+8.
