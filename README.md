@@ -45,12 +45,17 @@ $ cd k8s_terraform/k8s-do
 $ docker run -it -v $PWD:/app -w /app --entrypoint "" hashicorp/terraform:light sh
 ```
 
-#### Applying terraform files
+#### configuring environment variables
 
 ```sh
 $ export AWS_ACCESS_KEY_ID=(your_id)
 $ export AWS_SECRET_ACCESS_KEY=(your_secret)
 $ export DO_TOKEN=(your_digitalocean_token)
+```
+
+#### Applying terraform files
+
+```sh
 $ terraform init
 $ terraform plan -var=${DO_TOKEN} -out plan
 $ terraform apply -var=${DO_TOKEN} plan
