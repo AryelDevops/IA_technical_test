@@ -90,6 +90,10 @@ $ docker scan aryeldevops/hello-world-ia-prom:v1
 $ docker push aryeldevops/hello-world-ia-prom:v1
 ```
 
+#### comments
+
+* Replace aryeldevops/hello-world-ia-prom:(tag) by the your docker repository name by your
+
 ### Creating infrastructure with terraform
 
 #### Using terraform with official hashicorp docker image
@@ -156,6 +160,13 @@ $ helm install grafana grafana/grafana --values grafana-values.yaml
 * K8S_CONFIG: (kubeconfig cluster content)
 * DOCKER_USERNAME: (your_dockerhub_username)
 * DOCKER_PASSWD: (your_dockerhub_password)
+
+#### When you have a commit on the main branch, the pipeline will start
+
+#### comments
+
+* Edit file [main.yaml](.github/workflows/main.yaml) replace docker repository name by the your
+* Edit file [deployment.yaml](k8s/deployment.yaml) replace docker repository name by the your
 
 ### Contributing
 
