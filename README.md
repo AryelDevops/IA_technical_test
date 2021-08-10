@@ -81,7 +81,7 @@ $ helm install grafana grafana/grafana --values grafana-values.yaml
 2. configuration > datasources > add datasource > prometheus > url=<http://prometheus-server> > save and test
 3. import dashboard: + > import > Upload Json file > grafana/dashboard.json
 
-### Pipeline with github actions for deploy app in k8s
+### Pipeline with github actions
 
 * Create secrets in github (repository > settings > secrets > new repository secrets)
 * K8S_CONFIG: kubeconfig cluster created
