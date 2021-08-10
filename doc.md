@@ -111,8 +111,8 @@ $ export DO_TOKEN=(your_digitalocean_token)
 
 ```sh
 $ terraform init
-$ terraform plan -var=${DO_TOKEN} -out plan
-$ terraform apply -var=${DO_TOKEN} plan
+$ terraform plan -var="DO_TOKEN=${DO_TOKEN}" -out plan
+$ terraform apply -var="DO_TOKEN=${DO_TOKEN}" plan
 ```
 
 ### Configuring kubeconfig
