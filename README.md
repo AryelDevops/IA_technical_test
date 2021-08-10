@@ -45,7 +45,7 @@ $ cd k8s_terraform/k8s-do
 $ docker run -it -v $PWD:/app -w /app --entrypoint "" hashicorp/terraform:light sh
 ```
 
-#### configuring environment variables
+#### Configuring environment variables
 
 ```sh
 $ export AWS_ACCESS_KEY_ID=(your_id)
