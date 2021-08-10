@@ -46,7 +46,7 @@ preferred tool. (terraform, cloud formation or ansible);
 Create the infrastructure to deploy a simple website (helloworld!) with
 monitoring using kubernetes + prometheus + grafana
 
-[Documentation of project](doc.md)
+[README](README.md)
 
 ## Table of contents
 
@@ -83,6 +83,7 @@ $ code . (or other ide of your preference)
 ### Creating docker image to app
 
 ```sh
+$ cd app
 $ docker build -t aryeldevops/hello-world-ia-prom:v1 .
 $ docker build -t aryeldevops/hello-world-ia-prom:latest .
 $ docker scan aryeldevops/hello-world-ia-prom:v1
