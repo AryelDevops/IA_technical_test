@@ -1,7 +1,7 @@
 # Overview
 
 Create the infrastructure to deploy a simple website (helloworld!) with
-monitoring using kubernetes + prometheus + grafana
+monitoring using kubernetes + prometheus + grafana.
 
 [Full documentation of project](doc.md)
 
