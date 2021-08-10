@@ -3,7 +3,7 @@
 Create the infrastructure to deploy a simple website (helloworld!) with
 monitoring using kubernetes + prometheus + grafana
 
-[documentation](doc.md)
+[Documentation of project](doc.md)
 
 ## Table of contents
 
@@ -38,9 +38,16 @@ $ code . (or other ide of your preference)
 
 ### Creating infrastructure with terraform
 
+#### Using terraform with official hashicorp docker image
+
 ```sh
 $ cd k8s_terraform/k8s-do
 $ docker run -it -v $PWD:/app -w /app --entrypoint "" hashicorp/terraform:light sh
+```
+
+#### Applying terraform files
+
+```sh
 $ export AWS_ACCESS_KEY_ID=(your_id)
 $ export AWS_SECRET_ACCESS_KEY=(your_secret)
 $ export DO_TOKEN=(your_digitalocean_token)
