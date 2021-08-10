@@ -1,9 +1,52 @@
+# Step by step to complete this challenge
+
+## Description
+
+### Create the infrastructure to deploy a simple website (helloworld!) with monitoring
+
+* Simple website/app using Docker (you can use an existing docker image);
+* Use Kubernetes to deploy the applications (you can use a local kubernetes);
+* Deploy that website/app and monitoring tools of your choice in kubernetes;
+* Present the monitoring/status of the website/app;
+* Write documentation clearly and objectively all the steps necessary to run the challenge;
+
+### Bonus
+
+* Provisioning the infrastructure you needed to accomplish this challenge, using your
+preferred tool. (terraform, cloud formation or ansible);
+* Use Grafana integrated with the monitoring tool of your choice;
+
+### Images of project in production
+
+[Images](images_results)
+
+### Tecnologys applyeds
+
+* [Linux Ubuntu 20.04](https://ubuntu.com/download)
+* [Visual Studio Code](https://visualstudio.microsoft.com/pt-br/)
+* [Docker](https://docs.docker.com/engine/install/)
+* [DockerHUb](https://hub.docker.com/)
+* [Git](https://git-scm.com/)
+* [GitHub](https://github.com)
+* [Terraform](https://www.terraform.io/)
+* [Digital Ocean Cloud Provider](https://cloud.digitalocean.com/)
+* [doctl](https://docs.digitalocean.com/reference/doctl/how-to/install/)
+* [Kubernetes](https://kubernetes.io/pt-br/)
+* [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+* [Helm](https://helm.sh/)
+* [Prometheus](https://prometheus.io/)
+* [Grafana](https://grafana.com/)
+
+### Creating project in github
+
+* your repositories > new > Repository name > create repository
+
 # Overview
 
 Create the infrastructure to deploy a simple website (helloworld!) with
 monitoring using kubernetes + prometheus + grafana
 
-[Full documentation of project](doc.md)
+[README](README.md)
 
 ## Table of contents
 
