@@ -110,7 +110,7 @@ $ helm install grafana grafana/grafana --values grafana-values.yaml
 
 #### Add Secrets
 
-* K8S_CONFIG: kubeconfig cluster created
+* K8S_CONFIG: (kubeconfig cluster content)
 * DOCKER_USERNAME: (your_dockerhub_username)
 * DOCKER_PASSWD: (your_dockerhub_password)
 
