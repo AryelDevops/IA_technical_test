@@ -92,7 +92,7 @@ $ docker push aryeldevops/hello-world-ia-prom:v1
 
 #### comments
 
-* Replace aryeldevops/hello-world-ia-prom:(tag) by the your docker repository name by your
+* Replace aryeldevops/hello-world-ia-prom:(tag) by the your docker repository name
 
 ### Creating infrastructure with terraform
 
