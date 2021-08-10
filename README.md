@@ -16,7 +16,7 @@ monitoring using kubernetes + prometheus + grafana
 * [Installing prometheus helm chart](#Installing-prometheus-helm-chart)
 * [Installing grafana helm chart](#Installing-grafana-helm-chart)
 * [Integration between grafana and prometheus](#Integration-between-grafana-and-prometheus)
-* [Pipeline with github actions](Pipeline-with-github-actions)
+* [Pipeline with github actions](#Pipeline-with-github-actions)
 * [Contributing](#Contributing)
 
 ## How to use
