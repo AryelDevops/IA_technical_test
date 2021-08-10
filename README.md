@@ -10,6 +10,7 @@ monitoring using kubernetes + prometheus + grafana
 * [How to use](#How-to-use)
 * [Requirements for run this project](#Requirements-for-run-this-project)
 * [Cloning the project](#Cloning-the-project)
+* [Creating docker image to app](#Creating-docker-image-to-app)
 * [Creating infrastructure with terraform](#Creating-infrastructure-with-terraform)
 * [Configuring kubeconfig](#Configuring-kubeconfig)
 * [Installing prometheus helm chart](#Installing-prometheus-helm-chart)
@@ -34,6 +35,15 @@ monitoring using kubernetes + prometheus + grafana
 $ git clone https://github.com/AryelDevops/IA_technical_test.git
 $ cd IA_technical_test
 $ code . (or other ide of your preference)
+```
+
+### Creating docker image to app
+
+```sh
+$ docker build -t aryeldevops/hello-world-ia-prom:v1 .
+$ docker build -t aryeldevops/hello-world-ia-prom:latest .
+$ docker scan aryeldevops/hello-world-ia-prom:v1
+$ docker push aryeldevops/hello-world-ia-prom:v1
 ```
 
 ### Creating infrastructure with terraform
@@ -95,7 +105,10 @@ $ helm install grafana grafana/grafana --values grafana-values.yaml
 
 ### Pipeline with github actions
 
-* Create secrets in github (repository > settings > secrets > new repository secrets)
+#### Create secrets in github (repository > settings > secrets > new repository secrets)
+
+#### Add Secrets
+
 * K8S_CONFIG: kubeconfig cluster created
 * DOCKER_USERNAME: (your_dockerhub_username)
 * DOCKER_PASSWD: (your_dockerhub_password)
